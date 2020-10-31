@@ -20,11 +20,18 @@ It is usefull on interactive app accepting complex commands, like text bots.
 ## Usage
 
 ```crystal
-require "crystal-parameters"
+require "option_parser"
+require "parameters"
 
 
-Params.parse("ls -lh --author --hide '* *' /tmp")
+parameters = Parameters.parse("ls -lh --author --hide '* *' /tmp")
 # => ["ls", "-lh", "--author", "--hide", "* *", "/tmp"]
+
+if parameters
+  OptionParser.parse(parameters) do |parser|
+    parser.on("ls", "list files") { }
+  end
+end
 ```
 
 ## Development
