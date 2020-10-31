@@ -1,6 +1,6 @@
 # TODO: Write documentation for `Crystal::Parameters`
 module Parameters
-  VERSION = "1.0.0"
+  VERSION = "1.0.1"
 
   def self.parse(line : String) : Array(String)?
     delimiter = nil
