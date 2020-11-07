@@ -26,5 +26,15 @@ describe Parameters do
       args = Parameters.parse(%(!this is an "error))
       args.should be_nil
     end
+
+    it "handles spaces" do
+      args = Parameters.parse(%(this      ))
+      args.should eq(["this"])
+    end
+
+    it "handles empty parameters" do
+      args = Parameters.parse(%(this ''))
+      args.should eq(["this", ""])
+    end
   end
 end
