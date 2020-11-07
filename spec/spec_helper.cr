@@ -1,2 +1,2 @@
 require "spec"
-require "../src/crystal-parameters"
+require "../src/parameters"
