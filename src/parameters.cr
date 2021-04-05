@@ -1,6 +1,6 @@
 # TODO: Write documentation for `Crystal::Parameters`
 module Parameters
-  VERSION = "1.0.4"
+  VERSION = "1.0.5"
 
   def self.parse(line : String) : Array(String)?
     # We call "simple" a paramater without quotes, and "complex" a parameter

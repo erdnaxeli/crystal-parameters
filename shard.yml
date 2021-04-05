@@ -1,10 +1,10 @@
 name: parameters
-version: 1.0.4
+version: 1.0.5
 
 authors:
   - Alexandre Morignot <erdnaxeli@cervoi.se
 
-crystal: 0.35.1
+crystal: ">=0.35.1, <2"
 
 license: MIT
 
